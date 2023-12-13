@@ -7,8 +7,12 @@
     "outDir": "build",
     "rootDir": "src",
     "strict": true,
-    "noImplicitAny": true,
     "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "skipLibCheck": true,
+    "noImplicitAny": true,
     "resolveJsonModule": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.spec.ts"]
 }
